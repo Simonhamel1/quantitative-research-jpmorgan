@@ -47,5 +47,32 @@ Vous pouvez les installer en utilisant pip :
 pip install numpy pandas scikit-learn
 ```
 
-Exemple d'utilisation pour task2.py
-Code
+### Exemple d'utilisation pour task2.py
+Code : 
+
+```sh
+import unittest
+from datetime import date
+from task2 import contrat_prix
+
+class TestContratPrix(unittest.TestCase):
+
+    def test_injection_et_retrait(self):
+        dates_injection = [date(2023, 1, 1), date(2023, 2, 1)]
+        prix_injection = [10, 12]
+        dates_retrait = [date(2023, 3, 1), date(2023, 4, 1)]
+        prix_retrait = [15, 18]
+        taux = 100
+        taux_cout_stockage = 5
+        volume_total = 500
+        taux_cout_injection_retrait = 1
+
+        valeur_contrat = contrat_prix(dates_injection, prix_injection, dates_retrait, prix_retrait, taux, taux_cout_stockage, volume_total, taux_cout_injection_retrait)
+        
+        # Vérifiez que la valeur du contrat est correcte
+        self.assertEqual(valeur_contrat, 500)  # Remplacez 500 par la valeur attendue
+
+if __name__ == '__main__':
+    unittest.main()
+```
+###
