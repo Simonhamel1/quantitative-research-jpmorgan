@@ -44,7 +44,8 @@ Assurez-vous d'avoir les bibliothèques suivantes installées :
 Vous pouvez les installer en utilisant pip :
 
 ```sh
-pip install numpy pandas scikit-learn ```
+pip install numpy pandas scikit-learn
+```
 
 Exemple d'utilisation pour task2.py
 Code
