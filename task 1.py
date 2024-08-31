@@ -10,7 +10,7 @@ date_extrap = date(2025, 9, 30)
 date_temps = ["10-2020", "11-2020", "12-2020"]
 date_temps = pd.to_datetime(date_temps)
 data = [1, 2, 3]
-df = pd.read_csv('./data/nat_gas.csv', parse_dates=['Dates'])
+df = pd.read_csv('data/nat_gas.csv', parse_dates=['Dates'])
 prix = df['Prices'].values
 dates = df['Dates'].values
 
