@@ -1,36 +1,50 @@
-Voici un exemple de fichier README pour votre projet :
+# JP Morgan Chase & Co. Quantitative Research
 
-# Projet de Modélisation de Perte Attendue pour les Prêts
+Un dépôt du travail effectué pour le programme d'expérience professionnelle en recherche quantitative de JP Morgan Chase & Co. via Forage. Ce programme a enseigné des compétences clés en analyse de données, programmation et mathématiques financières. Les tâches accomplies étaient :
 
-Ce projet utilise la régression logistique pour prédire la probabilité de défaut de paiement sur des prêts et calcule la perte attendue en fonction de cette probabilité.
+1. **Investigation et Analyse des Données de Prix :** Apprendre sur les marchés des matières premières et démontrer des compétences en analyse de données.
+
+2. **Évaluation d'un Contrat de Stockage de Matières Premières :** Démontrer la compréhension des marchés financiers et de la tarification des dérivés.
+
+3. **Analyse du Risque de Crédit :** Analyser un portefeuille de prêts pour estimer la probabilité de défaut d'un client.
+
+4. **Catégorisation des Scores FICO :** Utiliser la programmation dynamique pour convertir les scores FICO en données catégorielles afin de prédire les défauts.
+
+Les principales fonctions de réponse à chaque problème ont été enregistrées dans des fichiers Python séparés et un Jupyter notebook résume les réponses. Les données brutes utilisées pour tous les problèmes et un certificat de réussite ont également été inclus.
+
+**Mots Clés :** Programmation, Analyse de Données, Dérivés, Matières Premières, Pensée Critique, Statistiques, Risque de Crédit
 
 ## Structure du Projet
 
-- `task3.py` : Script principal qui entraîne le modèle de régression logistique et définit la fonction de perte attendue.
-- `data/Task 3 and 4_Loan_Data.csv` : Fichier CSV contenant les données de prêt utilisées pour entraîner le modèle.
+### Fichiers Python
 
-## Prérequis
+- `task1.py` : Investigation et analyse des données de prix.
+- `task2.py` : Évaluation d'un contrat de stockage de matières premières.
+- `task3.py` : Analyse du risque de crédit.
+- `task4.py` : Catégorisation des scores FICO.
 
-Utilisation
-Charger les données et entraîner le modèle :
-Définir et utiliser la fonction de perte attendue :
-Structure des Données
-Le fichier CSV Task 3 and 4_Loan_Data.csv doit contenir les colonnes suivantes :
+### Jupyter Notebook
 
-lignes_credit_en_cours : Nombre de lignes de crédit en cours.
-dette_sur_revenu : Ratio de la dette totale sur le revenu.
-paiement_sur_revenu : Ratio du paiement du prêt sur le revenu.
-annees_employe : Nombre d'années d'emploi.
-score_fico : Score FICO du demandeur.
-montant_pret_en_cours : Montant du prêt en cours.
-revenu : Revenu du demandeur.
-dette_totale_en_cours : Dette totale en cours.
-defaut : Indicateur de défaut de paiement (1 pour défaut, 0 sinon).
-Auteurs
-Votre Nom
-Licence
-Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
+- `summary.ipynb` : Résumé des réponses aux problèmes.
 
-```
+### Données
 
-Assurez-vous de remplacer les sections appropriées par les informations spécifiques à votre projet.
+- `data/Task 3 and 4_Loan_Data.csv` : Fichier CSV contenant les données de prêt utilisées pour les tâches 3 et 4.
+
+## Utilisation
+
+### Prérequis
+
+Assurez-vous d'avoir les bibliothèques suivantes installées :
+
+- `numpy`
+- `pandas`
+- `scikit-learn`
+
+Vous pouvez les installer en utilisant pip :
+
+```sh
+pip install numpy pandas scikit-learn ```
+
+Exemple d'utilisation pour task2.py
+Code
